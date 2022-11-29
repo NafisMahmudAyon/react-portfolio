@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { BsFillMoonStarsFill }  from "react-icons/bs"
 import { AiFillFacebook, AiFillLinkedin,  } from "react-icons/ai"
 import Image from "next/image"
-import image from "../public/dev-ed-wave.png"
+import image from "../public/avatar.png"
 import design from "../public/design.png"
 import code from "../public/code.png"
 import consulting from "../public/consulting.png"
@@ -13,6 +13,7 @@ import web4 from "../public/web4.png"
 import web5 from "../public/web5.png"
 import web6 from "../public/web6.png"
 import { useState } from 'react'
+import Link from 'next/link'
 
  
 
@@ -116,6 +117,7 @@ export default function Home() {
               I offer from a wide range of services, including brand design, programming and teaching.
             </p>
           </div>
+          <Link href="/hello"><a>Hello page</a></Link>
 
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className=' basis-1/3 flex-1'>
@@ -139,7 +141,7 @@ export default function Home() {
           </div>
         </section>
         <footer className='text-center dark:bg-black'>
-          <p className='p-5 dark:text-white'>All right reserved by <a herf="https://nafisbd.com" className=' text-yellow-500'>NafisBD</a></p>
+          <p className='p-5 dark:text-white'>All right reserved by <span><a className='text-l text-yellow-500 hover:text-blue-900' href="https://nafisbd.com">NafisBD</a></span></p>
         </footer>
 
       </main>
